@@ -87,13 +87,7 @@ USTRUCT(BlueprintType)
 struct FGameData
 {
 	GENERATED_USTRUCT_BODY()
-
-	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Game")
-	bool PlayWithBots = true;
-	 
-	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Game", meta = (ClampMin = "1", ClampMax = "100"))
-	int32 PlayersNum = 2;
-	 
+	
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Game", meta = (ClampMin = "1", ClampMax = "10"))
 	int32 RoundsNum = 5;
 	
@@ -103,11 +97,7 @@ struct FGameData
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Game", meta = (ClampMin = "5", ClampMax = "30"))
 	int32 RespawnTime = 5; //in seconds 
 	
-	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite)
-	FLinearColor DefaultTeamColor = FLinearColor::Black;
 
-	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite)
-	TArray<FLinearColor> TeamColors;
 	 
 };
 

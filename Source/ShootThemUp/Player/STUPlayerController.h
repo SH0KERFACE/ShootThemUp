@@ -15,18 +15,23 @@ class SHOOTTHEMUP_API ASTUPlayerController : public APlayerController
 	GENERATED_BODY()
 public:
 	ASTUPlayerController();
+
 	
-protected:
+	void Killed(AController* KillerController, AController* VictimController);
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Components")
-	USTURespawnComponent* RespawnComponent;
+	USTURespawnComponent* MyRespawnComponent;
 
+protected:
+
+	
 	virtual void BeginPlay() override;
 	virtual void OnPossess(APawn* InPawn) override;
-	virtual void SetupInputComponent() override;
+	
 
+	void StartRespawn(AController* Controller);
 private:
-	void OnPauseGame();
+	
 	void OnMatchStateChanged(ESTUMathcState State);
 };
 

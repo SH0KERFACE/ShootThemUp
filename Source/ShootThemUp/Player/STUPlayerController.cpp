@@ -2,6 +2,9 @@
 
 
 #include "STUPlayerController.h"	
+
+#include "STUPlayerState.h"
+#include "STUUtils.h"
 #include "Components/STURespawnComponent.h"
 #include "Game/STUGameModeBase.h"
 #include "Game/STUGameStateBase.h"
@@ -9,7 +12,7 @@
 
 ASTUPlayerController::ASTUPlayerController()
 {
-	RespawnComponent = CreateDefaultSubobject<USTURespawnComponent>("RespawnComponent");
+	MyRespawnComponent = CreateDefaultSubobject<USTURespawnComponent>("RespawnComponent");
 }
 
 void ASTUPlayerController::BeginPlay()
@@ -48,17 +51,35 @@ void ASTUPlayerController::OnPossess(APawn* InPawn)
 	OnNewPawn.Broadcast(InPawn);
 }
 
-void ASTUPlayerController::SetupInputComponent()
+void ASTUPlayerController::StartRespawn(AController* Controller)
 {
-	Super::SetupInputComponent();
-	if(!InputComponent) return;
-
-	InputComponent->BindAction("PauseGame", IE_Pressed, this, &ASTUPlayerController::OnPauseGame);
+	auto GameState = Cast<ASTUGameStateBase>(GetWorld()->GetGameState());
+	if (!GameState) return;
+	
+	const auto RespawnAvailable = GameState->RoundCountDown >
+		GameState->MinRoundTimeForRespawn +
+		GameState->GetGameData().RespawnTime;
+	if(!RespawnAvailable) return;
+	const auto RespawnComponent = StuUtils::GetSTUPlayerComponent<USTURespawnComponent>(Controller);
+	if(!RespawnComponent) return;
+    
+	RespawnComponent->Respawn(GameState->GetGameData().RespawnTime);
 }
 
-void ASTUPlayerController::OnPauseGame()
+void ASTUPlayerController::Killed(AController* KillerController, AController* VictimController)
 {
-	if(!GetWorld() || !GetWorld()->GetAuthGameMode()) return;
+	const auto KillerPlayerState = KillerController ? Cast<ASTUPlayerState>(KillerController->PlayerState) : nullptr;
+	const auto VictimPlayerState = KillerController ? Cast<ASTUPlayerState>(VictimController->PlayerState) : nullptr;
 
-	GetWorld()->GetAuthGameMode()->SetPause(this);
+	if(KillerPlayerState)
+	{
+		KillerPlayerState->AddKill();
+	}
+
+	if(VictimPlayerState)
+	{
+		VictimPlayerState->AddDeath();
+	}
+
+	StartRespawn(VictimController);
 }

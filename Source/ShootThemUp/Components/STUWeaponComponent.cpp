@@ -44,6 +44,7 @@ void USTUWeaponComponent::NextWeapon()
 	if (!CanEquip()) return;
 	CurrentWeaponIndex = (CurrentWeaponIndex + 1) % Weapons.Num();
 	EquipWeapon(CurrentWeaponIndex);
+	EquipWeapon_Server(CurrentWeaponIndex);
 }
 
 
@@ -179,6 +180,21 @@ void USTUWeaponComponent::OnEquipFinished(USkeletalMeshComponent* MeshComponent)
 void USTUWeaponComponent::Reload()
 {
 	ChangeClip();
+
+	Reload_Server();
+}
+
+void USTUWeaponComponent::Reload_Server_Implementation()
+{
+	Reload_Multicast();
+}
+
+void USTUWeaponComponent::Reload_Multicast_Implementation()
+{
+	const auto Character = Cast<ASTUBaseCharacter>(GetOwner());
+	if(!Character && Character->IsLocallyControlled()) return;
+	
+	PlayAnimMontage(CurrentReloadAnimMontage);
 }
 
 bool USTUWeaponComponent::GetWeaponUIData(FWeaponUIData& UIData) const
@@ -256,7 +272,8 @@ void USTUWeaponComponent::OnEmptyClip(ASTUBaseWeapon* AmmoEmptyWeapon)
 	
 	if(CurrentWeapon == AmmoEmptyWeapon)
 	{
-		ChangeClip(); 
+		ChangeClip();
+		Reload_Server();
 	}
 	else
 	{
@@ -265,6 +282,7 @@ void USTUWeaponComponent::OnEmptyClip(ASTUBaseWeapon* AmmoEmptyWeapon)
 			if(Weapon == AmmoEmptyWeapon)
 			{
 				Weapon->ChangeClip();
+				Reload_Server();
 			}
 		}
 	}
@@ -294,4 +312,17 @@ bool USTUWeaponComponent::CanFire() const
 bool USTUWeaponComponent::CanEquip() const
 {
 	return !EQuipAnimInProgress && !ReloadAnimInProgress;
+}
+
+void USTUWeaponComponent::EquipWeapon_Server_Implementation(int32 WeaponIndex)
+{
+	EquipWeapon_Multicast(WeaponIndex);
+}
+
+void USTUWeaponComponent::EquipWeapon_Multicast_Implementation(int32 WeaponIndex)
+{
+	const auto Character = Cast<ASTUBaseCharacter>(GetOwner());
+	if(!Character && Character->IsLocallyControlled()) return;
+	
+	EquipWeapon(WeaponIndex);
 }

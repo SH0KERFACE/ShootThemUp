@@ -4,7 +4,7 @@
 #include "Components/SkeletalMeshComponent.h"
 #include "NiagaraFunctionLibrary.h"
 #include "NiagaraComponent.h"
-
+#include "Player/STUBaseCharacter.h"
 
 
 ASTUBaseWeapon::ASTUBaseWeapon()
@@ -118,15 +118,19 @@ void ASTUBaseWeapon::MakeHit(FHitResult& HitResult, const FVector& TraceStart, c
 
 void ASTUBaseWeapon::DecreaseAmmo()
 {
+
+	const auto Character = Cast<ASTUBaseCharacter>(GetOwner());
+	if (!Character) return;
+
 	if(CurrentAmmo.Bullets == 0)
 	{
 		return;
 	}
 	CurrentAmmo.Bullets--;
-
+	
 	if(IsClipEmpty() && !IsAmmoEmpty())
 	{
-		StopFire();
+		StopFire(Character);
 		OnClipEmpty.Broadcast(this);
 	}
 }

@@ -70,13 +70,7 @@ float ASTUBaseCharacter::GetMovementDirection() const
 	return FMath::RadiansToDegrees(AngleBetween) * FMath::Sign(CrossProduct.Z);
 }
 
-void ASTUBaseCharacter::SetPlayerColor(const FLinearColor& Color)
-{
-	const auto MaterialInst = GetMesh()->CreateAndSetMaterialInstanceDynamic(0);
-	if(!MaterialInst) return;
 
-	MaterialInst->SetVectorParameterValue(MaterialColorName, Color);
-}
 
 
 void ASTUBaseCharacter::OnDeath()
@@ -86,7 +80,7 @@ void ASTUBaseCharacter::OnDeath()
 	SetLifeSpan(5.0f);
 	
 	GetCapsuleComponent()->SetCollisionResponseToAllChannels(ECollisionResponse::ECR_Ignore);
-	WeaponComponent->StopFire(this);
+	WeaponComponent->StopFire();
 
 	GetMesh()->SetCollisionEnabled(ECollisionEnabled::QueryAndPhysics);
 	GetMesh()->SetSimulatePhysics(true);

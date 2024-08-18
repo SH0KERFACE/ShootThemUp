@@ -27,6 +27,6 @@ public:
 	int32 GetRoundsSecondsRemaining() const;
 
 private:
-	class ASTUGameModeBase* GetStuGameMode() const;
+	
 	class ASTUPlayerState* GetSTUPlayerState() const;
 };

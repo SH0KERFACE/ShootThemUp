@@ -3,6 +3,7 @@
 
 #include "AIController.h"
 #include "Game/STUGameModeBase.h"
+#include "Game/STUGameStateBase.h"
 
 USTURespawnComponent::USTURespawnComponent()
 {
@@ -29,10 +30,10 @@ void USTURespawnComponent::RespawnTimerUpdate()
 		if(!GetWorld()) return;
 		GetWorld()->GetTimerManager().ClearTimer(RespawnTimerHandle);
 
-		const auto GameMode = Cast<ASTUGameModeBase>(GetWorld()->GetAuthGameMode());
-		if(!GameMode) return;
-
-		GameMode->RespawnRequest(Cast<AController>(GetOwner()));
+		const auto GameState = Cast<ASTUGameStateBase>(GetWorld()->GetGameState());
+		if (!GameState) return;
+		
+		GameState->RespawnRequest(Cast<AController>(GetOwner()));
 	}
 }
 

@@ -15,12 +15,13 @@ class SHOOTTHEMUP_API ASTUPlayerCharacter : public ASTUBaseCharacter
 public:
 	ASTUPlayerCharacter(const FObjectInitializer& ObjInit);
 	
-protected:
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Components")
 	class USpringArmComponent *SpringArmComponent;
 	
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Components")
 	class UCameraComponent *CameraComponent;
+protected:
+	
 	
 	UPROPERTY()
 	class USphereComponent* CameraCollisionComponent;

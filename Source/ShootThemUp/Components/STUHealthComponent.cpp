@@ -9,6 +9,7 @@
 #include "Engine/World.h"
 #include "TimerManager.h"
 #include "Game/STUGameModeBase.h"
+#include "Player/STUPlayerController.h"
 
 
 USTUHealthComponent::USTUHealthComponent()
@@ -105,11 +106,11 @@ void USTUHealthComponent::PlayCameraShake()
 void USTUHealthComponent::Killed(AController* KillerController)
 {
 	if(!GetWorld()) return;
-	const auto GameMode =Cast<ASTUGameModeBase>( GetWorld()->GetAuthGameMode());
+	const auto Controller =Cast<ASTUPlayerController>( GetWorld()->GetAuthGameMode());
 
 	const auto Player = Cast<APawn>(GetOwner());
 	const auto VictimController = Player ? Player->Controller : nullptr;
 
-	GameMode->Killed(KillerController, VictimController);
+	Controller->Killed(KillerController, VictimController);
 }
 

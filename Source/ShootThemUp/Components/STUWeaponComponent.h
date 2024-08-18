@@ -36,11 +36,20 @@ public:
 	
 	void Reload();
 
+	UFUNCTION(Reliable, Server)
+	void Reload_Server();
+
+	UFUNCTION(Reliable, NetMulticast)
+	void Reload_Multicast();
+	
 	bool GetWeaponUIData(FWeaponUIData& UIData) const;
 	bool GetWeaponAmmoData(FAmmoData& AmmoData) const;
 
 	bool TryToAddAmmo(TSubclassOf<ASTUBaseWeapon> WeaponType, int32 ClipsAmount);
 	bool NeedAmmo(TSubclassOf<ASTUBaseWeapon> WeaponType);
+
+	
+
 protected:
 	
 	virtual void BeginPlay() override;
@@ -69,18 +78,28 @@ protected:
 
 	bool CanFire() const;
 	bool CanEquip() const;
+
 	void EquipWeapon(int32 WeaponIndex);
+	
+	UFUNCTION(Reliable, Server)
+	void EquipWeapon_Server(int32 WeaponIndex);
+
+	UFUNCTION(Reliable, NetMulticast)
+	void EquipWeapon_Multicast(int32 WeaponIndex);
 private:
 	
 	UPROPERTY()
 	UAnimMontage* CurrentReloadAnimMontage = nullptr;
 
+	
 	bool EQuipAnimInProgress = false;
+
 	bool ReloadAnimInProgress = false;
 	
 	void SpawnWeapons();
 	void AttachWeaponToSocket(ASTUBaseWeapon* Weapon, USceneComponent* SceneComponent, const FName& SocketName);
 	
+
 	void PlayAnimMontage(UAnimMontage* Animation);
 	
 	void InitAnimations();
