@@ -46,8 +46,7 @@ void ASTUPlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInput
 	PlayerInputComponent->BindAxis("LookUp", this,&ASTUPlayerCharacter::AddControllerPitchInput);
 	PlayerInputComponent->BindAxis("TurnAround", this,&ASTUPlayerCharacter::AddControllerYawInput);
 	PlayerInputComponent->BindAction("Jump", IE_Pressed, this,&ASTUPlayerCharacter::Jump);
-	PlayerInputComponent->BindAction("Sprint", IE_Pressed, this, &ASTUPlayerCharacter::OnStartSprinting);
-	PlayerInputComponent->BindAction("Sprint", IE_Released, this, &ASTUPlayerCharacter::OnStopSprinting);
+	
 	PlayerInputComponent->BindAction("Fire", IE_Pressed, WeaponComponent, &USTUWeaponComponent::StartFire);
 	PlayerInputComponent->BindAction("Fire", IE_Released, WeaponComponent, &USTUWeaponComponent::StopFire);
 
@@ -55,10 +54,7 @@ void ASTUPlayerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInput
 	PlayerInputComponent->BindAction("Reload", IE_Pressed, WeaponComponent, &USTUWeaponComponent::Reload);
 }
 	
-bool ASTUPlayerCharacter::IsSprinting() const
-{
-	return WantsToRun && IsMovingForward && !GetVelocity().IsZero();
-}
+
 
 
 void ASTUPlayerCharacter::MoveForward(float Amount)

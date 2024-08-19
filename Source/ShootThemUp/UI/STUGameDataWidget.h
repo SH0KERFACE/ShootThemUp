@@ -22,6 +22,4 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "UI")
 	int32 GetRoundsSecondsRemaining() const;
 
-private:
-	
 };

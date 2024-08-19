@@ -33,7 +33,7 @@ public:
 	virtual void SetupPlayerInputComponent(UInputComponent *PlayerInputComponent) override;
 
 	
-	virtual  bool IsSprinting() const	override;
+	
 
 private:
 	bool WantsToRun = false;
