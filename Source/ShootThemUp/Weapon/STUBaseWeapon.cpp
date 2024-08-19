@@ -17,7 +17,7 @@ ASTUBaseWeapon::ASTUBaseWeapon()
 
 
 
-void ASTUBaseWeapon::MakeShotdd(){}
+void ASTUBaseWeapon::MakeShot(){}
 
 bool ASTUBaseWeapon::TryToAddAmmo(int32 ClipsAmount)
 {

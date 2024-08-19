@@ -11,88 +11,64 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0a4d8896-328a-4941-8984-bac23e2a44a8" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ShootThemUp/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ShootThemUp/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShootThemUp/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ShootThemUp/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShootThemUp/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultEditor.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEditor.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultEngine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEngine.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ShootThemUp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShootThemUp/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Config/DefaultInput.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultInput.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/BP_STUGameInstance.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/BP_STUGameModeBase.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BP_STUGameModeBase.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Game/BP_STUGameModeBase.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Game/BP_STUGameModeBase.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Game/BP_STUGameState.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Game/BP_STUGameState.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Levels/TestLevel.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Levels/TestLevel.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Menu/UI/WBP_Menu.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Menu/UI/WBP_Menu.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Pickups/Meshes/Ammo.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Pickups/Meshes/Ammo.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Player/Animations/ABP_BaseCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Player/Animations/ABP_BaseCharacter.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Player/Animations/AO_BaseCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Player/Animations/AO_BaseCharacter.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Player/BP_STUPlayerCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Player/BP_STUPlayerCharacter.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/UI/BP_STUGameHUD.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/UI/Images/HUDMain.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/UI/Images/HUDMain.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Player/BP_STUPlayerController.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Player/BP_STUPlayerController.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Player/BP_STUSpectatorPawn.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/UI/BP_HUD.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/UI/BP_HUD.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/UI/WBP_GameData.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/UI/WBP_GameData.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/VFX/sA_Megapack_v1/sA_PickupSet_1/Materials/Textures/T_Beam_01.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/VFX/sA_Megapack_v1/sA_PickupSet_1/Materials/Textures/T_Beam_01.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/VFX/sA_Megapack_v1/sA_PickupSet_1/Materials/Textures/T_NoiseCloud_1.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/VFX/sA_Megapack_v1/sA_PickupSet_1/Materials/Textures/T_NoiseCloud_1.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/VFX/sA_Megapack_v1/sA_PickupSet_1/Materials/Textures/T_NoiseCloud_2.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/VFX/sA_Megapack_v1/sA_PickupSet_1/Materials/Textures/T_NoiseCloud_2.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/VFX/sA_Megapack_v1/sA_PickupSet_1/Materials/Textures/T_NoiseFurry.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/VFX/sA_Megapack_v1/sA_PickupSet_1/Materials/Textures/T_NoiseFurry.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/VFX/sA_Megapack_v1/sA_Projectilevfx/Vfx/Materials/Textures/Noise00.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/VFX/sA_Megapack_v1/sA_Projectilevfx/Vfx/Materials/Textures/Noise00.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/VFX/sA_Megapack_v1/sA_Projectilevfx/Vfx/Materials/Textures/Noise000.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/VFX/sA_Megapack_v1/sA_Projectilevfx/Vfx/Materials/Textures/Noise000.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/VFX/sA_Megapack_v1/sA_Projectilevfx/Vfx/Materials/Textures/Noise01.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/VFX/sA_Megapack_v1/sA_Projectilevfx/Vfx/Materials/Textures/Noise01.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/VFX/sA_Megapack_v1/sA_Projectilevfx/Vfx/Materials/Textures/Noise02.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/VFX/sA_Megapack_v1/sA_Projectilevfx/Vfx/Materials/Textures/Noise02.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/VFX/sA_Megapack_v1/sA_Projectilevfx/Vfx/Materials/Textures/Noise03.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/VFX/sA_Megapack_v1/sA_Projectilevfx/Vfx/Materials/Textures/Noise03.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/VFX/sA_Megapack_v1/sA_Projectilevfx/Vfx/Materials/Textures/Noise04.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/VFX/sA_Megapack_v1/sA_Projectilevfx/Vfx/Materials/Textures/Noise04.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/VFX/sA_Megapack_v1/sA_Projectilevfx/Vfx/Materials/Textures/Noise06.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/VFX/sA_Megapack_v1/sA_Projectilevfx/Vfx/Materials/Textures/Noise06.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/VFX/sA_Megapack_v1/sA_Projectilevfx/Vfx/Materials/Textures/Noise07.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/VFX/sA_Megapack_v1/sA_Projectilevfx/Vfx/Materials/Textures/Noise07.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/VFX/sA_Megapack_v1/sA_Projectilevfx/Vfx/Materials/Textures/Noise08.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/VFX/sA_Megapack_v1/sA_Projectilevfx/Vfx/Materials/Textures/Noise08.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/VFX/sA_Megapack_v1/sA_Projectilevfx/Vfx/Materials/Textures/Noise09.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/VFX/sA_Megapack_v1/sA_Projectilevfx/Vfx/Materials/Textures/Noise09.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/VFX/sA_Megapack_v1/sA_Projectilevfx/Vfx/Materials/Textures/Noise10.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/VFX/sA_Megapack_v1/sA_Projectilevfx/Vfx/Materials/Textures/Noise10.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/VFX/sA_Megapack_v1/sA_Projectilevfx/Vfx/Materials/Textures/Noise11.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/VFX/sA_Megapack_v1/sA_Projectilevfx/Vfx/Materials/Textures/Noise11.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/VFX/sA_Megapack_v1/sA_Projectilevfx/Vfx/Materials/Textures/Noise12.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/VFX/sA_Megapack_v1/sA_Projectilevfx/Vfx/Materials/Textures/Noise12.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/VFX/sA_Megapack_v1/sA_Projectilevfx/Vfx/Materials/Textures/T_Beam_01.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/VFX/sA_Megapack_v1/sA_Projectilevfx/Vfx/Materials/Textures/T_Beam_01.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/VFX/sA_Megapack_v1/sA_Rayvfx/Materials/Textures/Noise00.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/VFX/sA_Megapack_v1/sA_Rayvfx/Materials/Textures/Noise00.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/VFX/sA_Megapack_v1/sA_Rayvfx/Materials/Textures/Noise000.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/VFX/sA_Megapack_v1/sA_Rayvfx/Materials/Textures/Noise000.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/VFX/sA_Megapack_v1/sA_Rayvfx/Materials/Textures/Noise01.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/VFX/sA_Megapack_v1/sA_Rayvfx/Materials/Textures/Noise01.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/VFX/sA_Megapack_v1/sA_Rayvfx/Materials/Textures/Noise02.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/VFX/sA_Megapack_v1/sA_Rayvfx/Materials/Textures/Noise02.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/VFX/sA_Megapack_v1/sA_Rayvfx/Materials/Textures/Noise04.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/VFX/sA_Megapack_v1/sA_Rayvfx/Materials/Textures/Noise04.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/VFX/sA_Megapack_v1/sA_Rayvfx/Materials/Textures/Noise06.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/VFX/sA_Megapack_v1/sA_Rayvfx/Materials/Textures/Noise06.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/VFX/sA_Megapack_v1/sA_Rayvfx/Materials/Textures/Noise07.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/VFX/sA_Megapack_v1/sA_Rayvfx/Materials/Textures/Noise07.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/VFX/sA_Megapack_v1/sA_Rayvfx/Materials/Textures/Noise08.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/VFX/sA_Megapack_v1/sA_Rayvfx/Materials/Textures/Noise08.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/VFX/sA_Megapack_v1/sA_Rayvfx/Materials/Textures/Noise09.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/VFX/sA_Megapack_v1/sA_Rayvfx/Materials/Textures/Noise09.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/VFX/sA_Megapack_v1/sA_Rayvfx/Materials/Textures/Noise10.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/VFX/sA_Megapack_v1/sA_Rayvfx/Materials/Textures/Noise10.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/VFX/sA_Megapack_v1/sA_Rayvfx/Materials/Textures/Noise11.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/VFX/sA_Megapack_v1/sA_Rayvfx/Materials/Textures/Noise11.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/VFX/sA_Megapack_v1/sA_Rayvfx/Materials/Textures/Noise12.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/VFX/sA_Megapack_v1/sA_Rayvfx/Materials/Textures/Noise12.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/VFX/sA_Megapack_v1/sA_Rayvfx/Materials/Textures/T_Beam_01.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/VFX/sA_Megapack_v1/sA_Rayvfx/Materials/Textures/T_Beam_01.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/VFX/sA_Megapack_v1/sA_StylizedAttacksPack/Materials/Textures/T_Noise10.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/VFX/sA_Megapack_v1/sA_StylizedAttacksPack/Materials/Textures/T_Noise10.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/UI/WBP_GameOver.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/UI/WBP_GameOver.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/UI/WBP_PlayerHUD.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/UI/WBP_PlayerHUD.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/UI/WBP_PlayerStateRow.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/UI/WBP_PlayerStateRowTitle.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/UI/WBP_Spectator.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Weapons/AI_Weapon/BP_AISTULauncherWeapon.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Weapons/AI_Weapon/BP_AISTUProjectile.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Weapons/AI_Weapon/BP_AISTURifleWeapon.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Weapons/BP_STULauncherWeapon.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Weapons/BP_STULauncherWeapon.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Weapons/BP_STUProjectile.uasset" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Weapons/BP_STURifleWeapon.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Weapons/BP_STURifleWeapon.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShootThemUp.uproject" beforeDir="false" afterPath="$PROJECT_DIR$/ShootThemUp.uproject" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp.Target.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp.Target.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/AI/STUAICharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/AI/STUAICharacter.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Components/STUHealthComponent.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Components/STUHealthComponent.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Components/STUHealthComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Components/STUHealthComponent.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Components/STURespawnComponent.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Components/STURespawnComponent.h" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Components/STUWeaponComponent.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Components/STUWeaponComponent.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Components/STUWeaponComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Components/STUWeaponComponent.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Game/STUGameModeBase.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Game/STUGameModeBase.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Game/STUGameModeBase.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Game/STUGameModeBase.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Menu/STUMenuGameModeBase.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Menu/STUMenuGameModeBase.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Menu/STUMenuPlayerController.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Menu/STUMenuPlayerController.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Menu/UI/STULevelItemWidget.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Menu/UI/STULevelItemWidget.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Menu/UI/STUMenuHUD.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Menu/UI/STUMenuHUD.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Menu/UI/STUMenuWidget.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Menu/UI/STUMenuWidget.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Game/STUGameStateBase.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Game/STUGameStateBase.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Game/STUGameStateBase.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Game/STUGameStateBase.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Player/STUBaseCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Player/STUBaseCharacter.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Player/STUBaseCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Player/STUBaseCharacter.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Player/STUPlayerCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Player/STUPlayerCharacter.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Player/STUPlayerController.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Player/STUPlayerController.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Player/STUPlayerController.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Player/STUPlayerController.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Player/STUPlayerState.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Player/STUPlayerState.h" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/STUCoreTypes.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/STUCoreTypes.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/STUUtils.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/STUUtils.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/UI/STUGameDataWidget.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/UI/STUGameDataWidget.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/UI/STUGameDataWidget.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/UI/STUGameDataWidget.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/UI/STUGameHUD.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/UI/STUGameHUD.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/UI/STUGameOverWidget.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/UI/STUGameOverWidget.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/UI/STUGameHUD.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/UI/STUGameHUD.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/UI/STUGameOverWidget.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/UI/STUGameOverWidget.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/UI/STUHealthBarWidget.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/UI/STUHealthBarWidget.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/UI/STUHealthBarWidget.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/UI/STUHealthBarWidget.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Weapon/Components/STUWeaponFXComponent.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Weapon/Components/STUWeaponFXComponent.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/UI/STUPauseWidget.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/UI/STUPauseWidget.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/UI/STUPlayerHUDWidget.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/UI/STUPlayerHUDWidget.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/UI/STUPlayerHUDWidget.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/UI/STUPlayerHUDWidget.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/UI/STUSpectatorWidget.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/UI/STUSpectatorWidget.h" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Weapon/STUBaseWeapon.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Weapon/STUBaseWeapon.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Weapon/STUBaseWeapon.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Weapon/STUBaseWeapon.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Weapon/STULauncherWeapon.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Weapon/STULauncherWeapon.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Weapon/STULauncherWeapon.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Weapon/STULauncherWeapon.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Weapon/STURifleWeapon.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Weapon/STURifleWeapon.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Weapon/STURifleWeapon.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShootThemUp/Weapon/STURifleWeapon.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Weapon/STULauncherWeapon.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Weapon/STULauncherWeapon.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Weapon/STUProjectile.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Weapon/STUProjectile.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Weapon/STURifleWeapon.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShootThemUp/Weapon/STURifleWeapon.h" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +79,208 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
@@ -122,28 +299,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;C++ Project.ShootThemUp.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "C++ Project.ShootThemUp.executor": "Debug",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;rider.external.source.directories&quot;: [
-      &quot;C:\\Users\\220mi\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache&quot;,
-      &quot;C:\\Users\\220mi\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache&quot;,
-      &quot;C:\\Users\\220mi\\AppData\\Local\\Symbols\\src&quot;
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "C:\\Users\\220mi\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache",
+      "C:\\Users\\220mi\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache",
+      "C:\\Users\\220mi\\AppData\\Local\\Symbols\\src"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="C++ Project.ShootThemUp">
     <configuration name="ShootThemUp" type="CppProject" factoryName="C++ Project">
       <configuration_1>
@@ -271,7 +448,12 @@
       <workItem from="1723715190189" duration="13562000" />
       <workItem from="1723752586534" duration="867000" />
       <workItem from="1723794603606" duration="21237000" />
-      <workItem from="1723871429755" duration="3388000" />
+      <workItem from="1723871429755" duration="3601000" />
+      <workItem from="1723876127427" duration="2445000" />
+      <workItem from="1723884447183" duration="14989000" />
+      <workItem from="1723963620852" duration="7145000" />
+      <workItem from="1723982298544" duration="17871000" />
+      <workItem from="1724054867945" duration="24260000" />
     </task>
     <servers />
   </component>
@@ -280,16 +462,5 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Source/ShootThemUp/Game/STUGameModeBase.cpp</url>
-          <line>175</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

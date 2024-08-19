@@ -46,7 +46,7 @@ struct FWeaponUIData
 };
 
 //Health	
-DECLARE_MULTICAST_DELEGATE(FOnDeath);
+DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnDeath);
 DECLARE_MULTICAST_DELEGATE_TwoParams(FOnHealthChanged, float, float);
 
 //VFX
@@ -88,29 +88,19 @@ struct FGameData
 {
 	GENERATED_USTRUCT_BODY()
 	
-	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Game", meta = (ClampMin = "1", ClampMax = "10"))
-	int32 RoundsNum = 5;
 	
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Game", meta = (ClampMin = "5", ClampMax = "1200"))
-	int32 RoundsTime = 10; //in seconds
+	int32 RoundsTime = 300; //in seconds
 	
-	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Game", meta = (ClampMin = "5", ClampMax = "30"))
-	int32 RespawnTime = 5; //in seconds 
+	
 	
 
 	 
 };
 
-UENUM(BlueprintType)
-enum class ESTUMathcState: uint8
-{
-	WaitingToStart = 0,
-	InProgress,
-	Pause,
-	GameOver
-};
 
-DECLARE_MULTICAST_DELEGATE_OneParam(FOnMatchStateChangedSignature, ESTUMathcState);
+
+
 
 USTRUCT(BlueprintType)
 struct FLevelData

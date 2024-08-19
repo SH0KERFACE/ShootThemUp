@@ -18,41 +18,36 @@ class SHOOTTHEMUP_API ASTUGameStateBase : public AGameStateBase
 
 public:
 
-	FOnMatchStateChangedSignature OnMatchStateChanged;
-
-	void SetMatchState(ESTUMathcState State);
-
-	void RespawnRequest(AController* Controller);
-
 	
-	int32 GetCurrentRoundNum() const {return CurrenRound;}
+
+	DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnGameOver);
+
+	UPROPERTY(BlueprintAssignable)
+	FOnGameOver OnGameOver;
+	
 	int32 GetRoundSecondRemaining() const {return RoundCountDown;}
 	
 	FGameData GetGameData() const {return GameData;}
 
 	virtual void BeginPlay() override;
 
-	UPROPERTY(EditDefaultsOnly, Category = "Game")
-	int MinRoundTimeForRespawn = 10;
-
-	int32 CurrenRound = 1;
-	int32 RoundCountDown = 0;
 	
+	
+
+		
+	
+	void GameOver();
+
 protected:
 	UPROPERTY(EditDefaultsOnly, Category = "Game")
 	FGameData GameData;
 private:
-	ESTUMathcState MatchState = ESTUMathcState::WaitingToStart;
 
 	void StartRound();
 	void GameTimerUpdate();
 
-	void ResetPlayers();
-	void ResetOnePlayer(AController* Controller);
-
 	
-
-	void GameOver();
+	int32 RoundCountDown = 0;
 
 	
 	FTimerHandle GameRoundTimerHandle;

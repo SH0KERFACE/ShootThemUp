@@ -5,6 +5,8 @@
 #include "Weapon/STUBaseWeapon.h"
 #include "Player/STUBaseCharacter.h"
 #include "DrawDebugHelpers.h"
+#include "STUHealthComponent.h"
+#include "STUUtils.h"
 #include "Animations/STUEQuipFinishedAnimNotify.h"
 #include "Animations/STUReloadFinishedAnimNotify.h"
 #include "Animations/AnimUtils.h"
@@ -13,6 +15,8 @@ constexpr static int32 WeaponNum = 2;
 USTUWeaponComponent::USTUWeaponComponent()
 {
 	PrimaryComponentTick.bCanEverTick = false;
+	
+	
 }
 
 
@@ -179,6 +183,8 @@ void USTUWeaponComponent::OnEquipFinished(USkeletalMeshComponent* MeshComponent)
 
 void USTUWeaponComponent::Reload()
 {
+	if (!CanReload()) return;
+	
 	ChangeClip();
 
 	Reload_Server();
@@ -303,10 +309,16 @@ void USTUWeaponComponent::ChangeClip()
 
 bool USTUWeaponComponent::CanFire() const
 {
-	auto Character = Cast<ASTUBaseCharacter>(GetOwner());
-	if (!Character) {return false;}
+	const auto Character = Cast<ASTUBaseCharacter>(GetOwner());
+	if (!Character) return false;
+	const auto HealthComponent = StuUtils::GetSTUPlayerComponent<USTUHealthComponent>(Character);
+	if(!HealthComponent) return false;
 	
-	return CurrentWeapon && !EQuipAnimInProgress && !ReloadAnimInProgress && !Character->IsSprinting();
+	return CurrentWeapon
+	&& !EQuipAnimInProgress
+	&& !ReloadAnimInProgress
+	&& !Character->IsSprinting()
+	&& !HealthComponent->IsDead();
 }
 
 bool USTUWeaponComponent::CanEquip() const
@@ -326,3 +338,5 @@ void USTUWeaponComponent::EquipWeapon_Multicast_Implementation(int32 WeaponIndex
 	
 	EquipWeapon(WeaponIndex);
 }
+
+

@@ -14,7 +14,6 @@ class SHOOTTHEMUP_API USTUHealthBarWidget : public UUserWidget
 	GENERATED_BODY()
 
 public:
-	
 	UFUNCTION(BlueprintCallable)
 	void SetHealthPercent(float Percent);
 

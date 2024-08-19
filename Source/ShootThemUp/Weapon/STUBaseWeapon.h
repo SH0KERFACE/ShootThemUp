@@ -64,7 +64,7 @@ protected:
 	float TraceMaxDistance = 1500.0f;
 
 	UFUNCTION(Blueprintable,BlueprintCallable,BlueprintType)
-	virtual void MakeShotdd();
+	virtual void MakeShot();
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "Weapon")
 	FAmmoData DefaultAmmo{15,10,false};

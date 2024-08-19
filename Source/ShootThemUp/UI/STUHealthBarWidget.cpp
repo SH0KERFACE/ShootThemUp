@@ -5,6 +5,7 @@
 
 #include "Components/ProgressBar.h"
 
+
 void USTUHealthBarWidget::SetHealthPercent(float Percent)
 {
 	if(!HealthProgressBar) return;

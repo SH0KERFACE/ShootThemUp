@@ -33,17 +33,7 @@ bool USTUPlayerHUDWidget::GetCurrentWeaponAmmoData(FAmmoData& AmmoData) const
 	return  WeaponComponent->GetWeaponAmmoData(AmmoData);
 }
 
-bool USTUPlayerHUDWidget::IsPlayerAlive() const
-{
-	const auto HealthComponent = StuUtils::GetSTUPlayerComponent<USTUHealthComponent>(GetOwningPlayerPawn());
-	return HealthComponent && !HealthComponent->IsDead();
-}
 
-bool USTUPlayerHUDWidget::IsPlayerSpectating() const
-{
-	const auto Controller = GetOwningPlayer();
-	return Controller && Controller->GetStateName() == NAME_Spectating;
-}
 
 
 void USTUPlayerHUDWidget::NativeOnInitialized()
@@ -59,10 +49,7 @@ void USTUPlayerHUDWidget::NativeOnInitialized()
 
 void USTUPlayerHUDWidget::OnHealthChange(float Health, float HealthDelta)
 {
-	if(HealthDelta < 0.0f)
-	{
-		OnTakeDamage();
-	}
+
 	UpdateHealthBar();
 }
 
@@ -86,14 +73,6 @@ void USTUPlayerHUDWidget::UpdateHealthBar()
 }
 
 
-int32 USTUPlayerHUDWidget::GetKillsNum() const
-{
-	const auto Controller = GetOwningPlayer();
-	if(!Controller) return 0;
-
-	const auto PlayerState = Cast<ASTUPlayerState>(Controller->PlayerState);
-	return PlayerState ? PlayerState->GetKillsNum() : 0;
-}
 
 FString USTUPlayerHUDWidget::FormatBullets(int32 BulletsNum) const
 {

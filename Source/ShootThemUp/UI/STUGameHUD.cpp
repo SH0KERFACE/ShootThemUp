@@ -16,29 +16,7 @@ void ASTUGameHUD::BeginPlay()
 {
 	Super::BeginPlay();
 	
-	
-	GameWidgets.Add(ESTUMathcState::InProgress, CreateWidget<UUserWidget>(GetWorld(), PlayerHUDWidgetClass));
-	GameWidgets.Add(ESTUMathcState::Pause, CreateWidget<UUserWidget>(GetWorld(), PauseWidgetClass));
-	GameWidgets.Add(ESTUMathcState::GameOver, CreateWidget<UUserWidget>(GetWorld(), GameOverWidgetClass));
-	
-	for(auto GameWidgetPair: GameWidgets)
-	{
-		const auto GameWidget = GameWidgetPair.Value;
-		if(!GameWidget) return;
 
-		GameWidget->AddToViewport();
-		GameWidget->SetVisibility(ESlateVisibility::Hidden);
-	}
-	
-	
-	if(GetWorld())
-	{
-		const auto GameState = Cast<ASTUGameStateBase>(GetWorld()->GetAuthGameMode());
-		if(GameState)
-		{
-			GameState->OnMatchStateChanged.AddUObject(this, &ASTUGameHUD::OnMatchStateChanged);
-		}
-	}
 }
 
 void ASTUGameHUD::DrawCrossHair()
@@ -54,22 +32,4 @@ void ASTUGameHUD::DrawCrossHair()
 	DrawLine(Center.Min, Center.Max - HalfLinesSize, Center.Min, Center.Max + HalfLinesSize,LineColor, LineThickness );
 }
 
-void ASTUGameHUD::OnMatchStateChanged(ESTUMathcState State)
-{
-	if(CurrentWidget)
-	{
-		CurrentWidget->SetVisibility(ESlateVisibility::Hidden);
-	}
-
-	if(GameWidgets.Contains(State))
-	{
-		CurrentWidget = GameWidgets[State];
-	}
-
-	if(CurrentWidget)
-	{
-		CurrentWidget->SetVisibility(ESlateVisibility::Visible);
-	}
-	
-}
 

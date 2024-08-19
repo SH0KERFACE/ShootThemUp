@@ -9,6 +9,7 @@
 #include "Engine/World.h"
 #include "TimerManager.h"
 #include "Game/STUGameModeBase.h"
+#include "Net/UnrealNetwork.h"
 #include "Player/STUPlayerController.h"
 
 
@@ -16,7 +17,7 @@ USTUHealthComponent::USTUHealthComponent()
 {
 	
 	PrimaryComponentTick.bCanEverTick = false;
-  
+	SetIsReplicatedByDefault(true);
 }
 
 bool USTUHealthComponent::TryToAddHealth(float HealthAmount)
@@ -66,7 +67,6 @@ void USTUHealthComponent::OnTakeAnyDamage(AActor* DamageActor, float Damage, con
 	{
 		GetWorld()->GetTimerManager().SetTimer(HealTimerHandle, this, &USTUHealthComponent::HealUpdate, HealUpdateTime, true, HealDelay);
 	}
-	PlayCameraShake();
 }
 
 void USTUHealthComponent::HealUpdate()
@@ -89,18 +89,7 @@ void USTUHealthComponent::SetHealth(float NewHealth)
 	OnHealthChanged.Broadcast(Health, HealthDelta);
 }
 
-void USTUHealthComponent::PlayCameraShake()
-{
-	if(IsDead()) return;
 
-	const auto Player = Cast<APawn>(GetOwner());
-	if(!Player) return;
-
-	const auto Controller = Player->GetController<APlayerController>();
-	if(!Controller || !Controller->PlayerCameraManager) return;
-
-	Controller->PlayerCameraManager->StartCameraShake(CameraShake);
-}
 
 
 void USTUHealthComponent::Killed(AController* KillerController)
@@ -111,6 +100,10 @@ void USTUHealthComponent::Killed(AController* KillerController)
 	const auto Player = Cast<APawn>(GetOwner());
 	const auto VictimController = Player ? Player->Controller : nullptr;
 
-	Controller->Killed(KillerController, VictimController);
 }
 
+void USTUHealthComponent::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const
+{
+	DOREPLIFETIME(USTUHealthComponent, Health);
+	
+}

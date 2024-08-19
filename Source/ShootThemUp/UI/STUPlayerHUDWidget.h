@@ -21,18 +21,10 @@ public:
 	
 	UFUNCTION(BlueprintCallable, Category = "UI")
 	bool GetCurrentWeaponAmmoData(FAmmoData& AmmoData) const;
+
+
+
 	
-	UFUNCTION(BlueprintCallable, Category = "UI")
-	bool IsPlayerAlive() const;
-
-	UFUNCTION(BlueprintCallable, Category = "UI")
-	bool IsPlayerSpectating() const;
-
-	UFUNCTION(BlueprintImplementableEvent, Category = "UI")
-	void OnTakeDamage();
-
-	UFUNCTION(BlueprintCallable, Category = "UI")
-	int32 GetKillsNum() const;
 
 	UFUNCTION(BlueprintCallable, Category = "UI")
 	FString FormatBullets(int32 BulletsNum) const;
