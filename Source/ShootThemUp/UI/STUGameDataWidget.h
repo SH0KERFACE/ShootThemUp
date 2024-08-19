@@ -24,5 +24,4 @@ public:
 
 private:
 	
-	class ASTUPlayerState* GetSTUPlayerState() const;
 };

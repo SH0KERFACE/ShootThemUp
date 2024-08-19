@@ -4,9 +4,6 @@
 #include "UI/STUGameDataWidget.h"
 
 #include "Game/STUGameStateBase.h"
-#include "Player/STUPlayerState.h"
-
-
 
 
 
@@ -20,7 +17,3 @@ int32 USTUGameDataWidget::GetRoundsSecondsRemaining() const
 
 
 
-ASTUPlayerState* USTUGameDataWidget::GetSTUPlayerState() const
-{
-	return GetOwningPlayer() ? Cast<ASTUPlayerState>(GetOwningPlayer()->PlayerState) : nullptr;
-}

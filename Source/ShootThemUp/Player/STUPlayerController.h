@@ -3,7 +3,6 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "STUCoreTypes.h"
 #include "GameFramework/PlayerController.h"
 #include "STUPlayerController.generated.h"
 
@@ -21,8 +20,6 @@ class SHOOTTHEMUP_API ASTUPlayerController : public APlayerController
 protected:
 
 	virtual void OnPossess(APawn* InPawn) override;
-	
-
 	
 };
 

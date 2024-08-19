@@ -7,7 +7,6 @@
 #include "STUGameStateBase.h"
 #include "Player/STUBaseCharacter.h"
 #include "Player/STUPlayerController.h"
-#include "Player/STUPlayerState.h"
 
 
 
@@ -16,7 +15,6 @@ ASTUGameModeBase::ASTUGameModeBase()
 {
     DefaultPawnClass = ASTUBaseCharacter::StaticClass();
     PlayerControllerClass = ASTUPlayerController::StaticClass();
-    PlayerStateClass = ASTUPlayerState::StaticClass();
 }
 
 
